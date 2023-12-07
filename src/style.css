@@ -1,6 +1,7 @@
 :root {
   --blanco: #fff;
   --primary: #f59e0b;
+  --gris: #e1e1e1;
 }
 html {
   font-size: 62.5%;
@@ -10,14 +11,14 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   color: var(--blanco);
   font-size: 2rem;
 }
 .titulo {
   text-align: center;
   font-size: 3rem;
-  margin-top:5rem;
+  margin-top: 5rem;
 }
 
 .contenedor {
@@ -27,11 +28,11 @@ body {
 }
 @media (min-width: 768px) {
   .buscador-clima {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      align-items: center;
-      gap: 4rem;
-      margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 4rem;
+    margin-top: 5rem;
   }
 }
 .formulario,
@@ -44,16 +45,17 @@ body {
   font-size: 2rem;
   font-weight: 700;
 }
-.formulario input[type="text"], 
+.formulario input[type="text"],
 .formulario select {
   padding: 1rem;
   background-color: transparent;
-  border: .3rem solid var(--blanco);
+  border: 0.3rem solid var(--blanco);
   border-radius: 1rem;
-  color: var(--blanco);
+  color: var(--gris);
   font-weight: 400;
   font-size: 1.8rem;
 }
+
 .formulario input[type="submit"] {
   background-color: var(--primary);
   border: none;
@@ -65,9 +67,14 @@ body {
   padding: 1rem;
   margin-top: 2rem;
 }
-.campo ::placeholder { 
+
+.formulario option {
+  background-color: transparent;
+  color: #000;
+}
+.campo ::placeholder {
   color: var(--blanco);
-  opacity: 1; 
+  opacity: 1;
 }
 
 .resultado {
